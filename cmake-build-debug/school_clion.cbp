@@ -83,10 +83,19 @@
 		<Unit filename="/home/home_rebecca/projects/school_clion/main.cpp">
 			<Option target="school_clion"/>
 		</Unit>
-		<Unit filename="/home/home_rebecca/projects/school_clion/quicksort/quicksort.cpp">
+		<Unit filename="/home/home_rebecca/projects/school_clion/sort/bubblesort.cpp">
 			<Option target="school_clion"/>
 		</Unit>
-		<Unit filename="/home/home_rebecca/projects/school_clion/quicksort/quicksort.h">
+		<Unit filename="/home/home_rebecca/projects/school_clion/sort/quicksort.cpp">
+			<Option target="school_clion"/>
+		</Unit>
+		<Unit filename="/home/home_rebecca/projects/school_clion/sort/quicksort.h">
+			<Option target="school_clion"/>
+		</Unit>
+		<Unit filename="/home/home_rebecca/projects/school_clion/student_array/student_array.cpp">
+			<Option target="school_clion"/>
+		</Unit>
+		<Unit filename="/home/home_rebecca/projects/school_clion/student_array/student_array.h">
 			<Option target="school_clion"/>
 		</Unit>
 		<Unit filename="/home/home_rebecca/projects/school_clion/tools/output.cpp">
