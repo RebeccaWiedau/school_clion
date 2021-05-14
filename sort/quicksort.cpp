@@ -2,7 +2,7 @@
 #include "../tools/output.h"
 #include <iostream>
 
-namespace sort::quicksort {
+namespace sort {
   void quicksort(int array[], int length, int index_left, int index_right, bool is_sorted)
   {
 
