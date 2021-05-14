@@ -1,6 +1,6 @@
 #include "bubblesort.h"
-#include "iostream"
 #include "../tools/output.h"
+#include "iostream"
 namespace sort {
   void bubblesort(int array[], int array_length)
   {
@@ -50,27 +50,27 @@ namespace sort {
     while (!is_sorted) {
       is_sorted = true;
       for (int i = 0; i < array_length - 1; i++) {
-        bool need_swap = is_greater(surenames[i], surenames[i+1]);
+        bool need_swap = is_greater(surenames[i], surenames[i + 1]);
         if (need_swap) {
           char* temp_p = surenames[i];
-          surenames[i] = surenames[i+1];
-          surenames[i+1] = temp_p;
+          surenames[i] = surenames[i + 1];
+          surenames[i + 1] = temp_p;
           temp_p = firstname[i];
-          firstname[i] = firstname[i+1];
-          firstname[i+1] = temp_p;
+          firstname[i] = firstname[i + 1];
+          firstname[i + 1] = temp_p;
           is_sorted = false;
         }
       }
     }
   }
 
-
-bool is_greater(char* a, char* b) {
-  // a > b?
-  int i = 0;
-  while (a[i] == b[i] && i < 4) {
-    i++;
+  bool is_greater(char* a, char* b)
+  {
+    // a > b?
+    int i = 0;
+    while (a[i] == b[i] && i < 4) {
+      i++;
+    }
+    return a[i] > b[i];
   }
-  return a[i] > b[i];
-}
-}
+}// namespace sort

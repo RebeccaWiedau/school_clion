@@ -16,7 +16,8 @@ namespace tools {
     }
     std::cout << std::endl;
   }
-  void array_output(char array[], int length) {
+  void array_output(char array[], int length)
+  {
     for (int i = 0; i < length; i++) {
       std::cout << array[i] << " ";
     }

@@ -41,4 +41,4 @@ namespace sort {
     quicksort(array, length, index_left, pivot_index - 1, is_pivot_left);
     quicksort(array, length, pivot_index + 1, index_right, is_pivot_right);
   }
-}
+}// namespace sort
