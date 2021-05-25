@@ -80,10 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/home_rebecca/projects/school_clion/funktionszeiger/funktionszeiger.cpp">
+			<Option target="school_clion"/>
+		</Unit>
+		<Unit filename="/home/home_rebecca/projects/school_clion/funktionszeiger/funktionszeiger.h">
+			<Option target="school_clion"/>
+		</Unit>
 		<Unit filename="/home/home_rebecca/projects/school_clion/main.cpp">
 			<Option target="school_clion"/>
 		</Unit>
 		<Unit filename="/home/home_rebecca/projects/school_clion/sort/bubblesort.cpp">
+			<Option target="school_clion"/>
+		</Unit>
+		<Unit filename="/home/home_rebecca/projects/school_clion/sort/bubblesort.h">
 			<Option target="school_clion"/>
 		</Unit>
 		<Unit filename="/home/home_rebecca/projects/school_clion/sort/quicksort.cpp">

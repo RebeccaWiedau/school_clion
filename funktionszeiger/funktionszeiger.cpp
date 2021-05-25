@@ -3,6 +3,18 @@
 
 namespace funktionszeiger {
     void hexadezimal(int zahl) {
+        bool is_negative = false;
+
+        if (zahl < 0) {
+            zahl = abs(zahl);
+            is_negative = true;
+        }
+
+
+        // CODE
+        if (is_negative) {
+            zahl = -zahl;
+        }
         std::cout << "Test " << std::hex << zahl << std::endl;
     }
     void dezimal(int zahl) {
@@ -11,38 +23,40 @@ namespace funktionszeiger {
         std::cout << "Test " << std::dec << zahl << std::endl;
     }
     void oktal(int zahl) {
+        int original_number = zahl;
 
-        if (-7 <= zahl && zahl <= 7) {
-            std::cout << zahl << std::endl;
+        if (under_digit(8, zahl)) {
+            std::cout << original_number << " in octal: " << zahl << std::endl;
             return;
         }
 
-        int potenz = 10;
+        int octal_digit_potency = 1;
         int result = 0;
 
-        result = zahl % 8;
-        zahl = zahl / 8;
+        do {
+            result += (zahl % 8) * octal_digit_potency;
+            zahl /= 8;
+            octal_digit_potency *= 10;
+        } while (zahl != 0);
 
-        if (zahl > 8) {
-            result += (zahl % 8) * 10;
-            zahl = zahl / 8;
-        } else {
-            result += zahl / 8 * potenz;
-        }
-        std::cout << result << std::endl;
-        std::cout << zahl << std::endl;
-
-
-//        std::cout << "Test " << std::oct << zahl << std::endl;
+        std::cout << original_number << " in octal: " << result << std::endl;
+        auto vorzeichen = '+';
+        if (original_number < 0) vorzeichen = '-';
+        std::cout << "Gegen Test: " << std::oct << vorzeichen << abs(original_number) << std::endl;
     }
 
+
+
+    bool under_digit(int digit_system, int number) {
+        return (number > digit_system && -digit_system > number);
+    }
 
     void funktionszeiger() {
         void (*funk_p[3])(int);
         funk_p[0] = hexadezimal;
         funk_p[1] = oktal;
         funk_p[2] = dezimal;
-        int zahl = 203;
+        int zahl = 42453;
         int eingabe;
         //        std::cout << "Bitte Zahl eingeben: ";
         //        std::cin >> zahl

@@ -142,6 +142,33 @@ school_clion/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/school_clion.dir/build.make CMakeFiles/school_clion.dir/build
 .PHONY : school_clion/fast
 
+funktionszeiger/funktionszeiger.o: funktionszeiger/funktionszeiger.cpp.o
+
+.PHONY : funktionszeiger/funktionszeiger.o
+
+# target to build an object file
+funktionszeiger/funktionszeiger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school_clion.dir/build.make CMakeFiles/school_clion.dir/funktionszeiger/funktionszeiger.cpp.o
+.PHONY : funktionszeiger/funktionszeiger.cpp.o
+
+funktionszeiger/funktionszeiger.i: funktionszeiger/funktionszeiger.cpp.i
+
+.PHONY : funktionszeiger/funktionszeiger.i
+
+# target to preprocess a source file
+funktionszeiger/funktionszeiger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school_clion.dir/build.make CMakeFiles/school_clion.dir/funktionszeiger/funktionszeiger.cpp.i
+.PHONY : funktionszeiger/funktionszeiger.cpp.i
+
+funktionszeiger/funktionszeiger.s: funktionszeiger/funktionszeiger.cpp.s
+
+.PHONY : funktionszeiger/funktionszeiger.s
+
+# target to generate assembly for a file
+funktionszeiger/funktionszeiger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/school_clion.dir/build.make CMakeFiles/school_clion.dir/funktionszeiger/funktionszeiger.cpp.s
+.PHONY : funktionszeiger/funktionszeiger.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -313,6 +340,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... school_clion"
+	@echo "... funktionszeiger/funktionszeiger.o"
+	@echo "... funktionszeiger/funktionszeiger.i"
+	@echo "... funktionszeiger/funktionszeiger.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

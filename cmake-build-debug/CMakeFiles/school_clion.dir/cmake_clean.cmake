@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/school_clion.dir/funktionszeiger/funktionszeiger.cpp.o"
   "CMakeFiles/school_clion.dir/main.cpp.o"
   "CMakeFiles/school_clion.dir/sort/bubblesort.cpp.o"
   "CMakeFiles/school_clion.dir/sort/quicksort.cpp.o"
