@@ -2,10 +2,12 @@
 #include "sort/quicksort.h"
 #include "tools/output.h"
 #include "student_array/student_array.h"
+#include "funktionszeiger/funktionszeiger.h"
 
 int main()
   {
-    student_array::student_array();
+    funktionszeiger::funktionszeiger();
+//    student_array::student_array();
 
 //    int array[] = { 10, 19, 7, 3, 5, 6, 9};
 //    tools::array_output(array, 7, "Array without sorting");
