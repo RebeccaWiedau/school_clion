@@ -3,19 +3,26 @@
 
 namespace funktionszeiger {
     void hexadezimal(int zahl) {
-        bool is_negative = false;
+        int original_number = zahl;
 
-        if (zahl < 0) {
-            zahl = abs(zahl);
-            is_negative = true;
+        if (under_digit(16, zahl)) {
+            std::cout << original_number << " in hex: " << zahl << std::endl;
+            return;
         }
 
+        int octal_digit_potency = 1;
+        int result = 0;
 
-        // CODE
-        if (is_negative) {
-            zahl = -zahl;
-        }
-        std::cout << "Test " << std::hex << zahl << std::endl;
+        do {
+            result += (zahl % 16) * octal_digit_potency;
+            zahl /= 16;
+            octal_digit_potency *= 10;
+        } while (zahl != 0);
+
+        std::cout << original_number << " in hex: " << result << std::endl;
+//        auto vorzeichen = '+';
+//        if (original_number < 0) vorzeichen = '-';
+//        std::cout << "Gegen Test: " << std::hex << vorzeichen << abs(original_number) << std::endl;
     }
     void dezimal(int zahl) {
 
@@ -40,15 +47,12 @@ namespace funktionszeiger {
         } while (zahl != 0);
 
         std::cout << original_number << " in octal: " << result << std::endl;
-        auto vorzeichen = '+';
-        if (original_number < 0) vorzeichen = '-';
-        std::cout << "Gegen Test: " << std::oct << vorzeichen << abs(original_number) << std::endl;
     }
 
 
 
     bool under_digit(int digit_system, int number) {
-        return (number > digit_system && -digit_system > number);
+        return (number < digit_system && -digit_system < number);
     }
 
     void funktionszeiger() {
@@ -56,7 +60,7 @@ namespace funktionszeiger {
         funk_p[0] = hexadezimal;
         funk_p[1] = oktal;
         funk_p[2] = dezimal;
-        int zahl = 42453;
+        int zahl = 25;
         int eingabe;
         //        std::cout << "Bitte Zahl eingeben: ";
         //        std::cin >> zahl
