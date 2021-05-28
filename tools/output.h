@@ -8,4 +8,5 @@ namespace tools {
   void array_output(char array[], int length, std::string message);
   void array_output (double array[], int length);
   void array_output (double array[], int length, std::string message);
+  void hexadezimal_array_output(char array[], int length, bool is_negative);
 }
