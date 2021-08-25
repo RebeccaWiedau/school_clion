@@ -18,7 +18,6 @@ void wiederholung() {
     } while (amount_user < 1);
 
     TUser *TUser_list = new TUser[amount_user];
-//TODO: Sonderzeichen
     for (int i = 0; i < amount_user; i++) {
         std::cout << i + 1 << ". User:" << std::endl;
         std::cout << "Name: ";
@@ -30,9 +29,10 @@ void wiederholung() {
     std::cout << std::endl;
     std::cout << std::endl;
     std::cout << "\tUser:" << std::endl;
-    //TODO: Ausgabe
+    std::cout << "\t-----" << std::endl;
+
     for (int i = 0; i < amount_user; i++) {
-        std::cout << "\t" << i + 1 << "\t" << TUser_list[i].name_ << "\t" << TUser_list[i].password_ << "\t" << (is_correct_password(TUser_list[i]) ? "true" : "false");
+        std::cout << "\t" << i + 1 << "\t" << TUser_list[i].name_ << "\t" << TUser_list[i].password_ << "\t" << (is_correct_password(TUser_list[i]) ? "true" : "false") << std::endl;
         std::cout << std::endl;
     }
 }
