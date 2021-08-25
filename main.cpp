@@ -3,9 +3,11 @@
 #include "student_array/student_array.h"
 #include "tools/output.h"
 #include <iostream>
+#include "wiederholung/wiederholung.h"
 
 int main() {
-    funktionszeiger::funktionszeiger();
+    wiederholung();
+//    funktionszeiger::funktionszeiger();
     //    funktionszeiger::funktionszeiger();
     //    student_array::student_array();
 
