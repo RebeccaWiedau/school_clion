@@ -3,4 +3,13 @@ project(school_clion)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(school_clion main.cpp tools/random_array.cpp  sort/quicksort.cpp tools/output.cpp  student_array/student_array.cpp sort/bubblesort.cpp funktionszeiger/funktionszeiger.cpp funktionszeiger/funktionszeiger.h wiederholung/wiederholung.cpp wiederholung/wiederholung.h)
+add_executable(school_clion main.cpp
+    tools/random_array.cpp
+    tools/output.cpp
+    sort/quicksort.cpp
+    sort/bubblesort.cpp
+
+    student_array/student_array.cpp
+    funktionszeiger/funktionszeiger.cpp
+    wiederholung/wiederholung.cpp
+    )
