@@ -1,21 +1,21 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/home_rebecca/projects/school_clion/funktionszeiger/funktionszeiger.cpp" "/home/home_rebecca/projects/school_clion/cmake-build-debug/CMakeFiles/school_clion.dir/funktionszeiger/funktionszeiger.cpp.o"
-  "/home/home_rebecca/projects/school_clion/main.cpp" "/home/home_rebecca/projects/school_clion/cmake-build-debug/CMakeFiles/school_clion.dir/main.cpp.o"
-  "/home/home_rebecca/projects/school_clion/sort/bubblesort.cpp" "/home/home_rebecca/projects/school_clion/cmake-build-debug/CMakeFiles/school_clion.dir/sort/bubblesort.cpp.o"
-  "/home/home_rebecca/projects/school_clion/sort/quicksort.cpp" "/home/home_rebecca/projects/school_clion/cmake-build-debug/CMakeFiles/school_clion.dir/sort/quicksort.cpp.o"
-  "/home/home_rebecca/projects/school_clion/student_array/student_array.cpp" "/home/home_rebecca/projects/school_clion/cmake-build-debug/CMakeFiles/school_clion.dir/student_array/student_array.cpp.o"
-  "/home/home_rebecca/projects/school_clion/tools/output.cpp" "/home/home_rebecca/projects/school_clion/cmake-build-debug/CMakeFiles/school_clion.dir/tools/output.cpp.o"
-  "/home/home_rebecca/projects/school_clion/tools/random_array.cpp" "/home/home_rebecca/projects/school_clion/cmake-build-debug/CMakeFiles/school_clion.dir/tools/random_array.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "Clang")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/home_rebecca/projects/school_clion/funktionszeiger/funktionszeiger.cpp" "CMakeFiles/school_clion.dir/funktionszeiger/funktionszeiger.cpp.o" "gcc" "CMakeFiles/school_clion.dir/funktionszeiger/funktionszeiger.cpp.o.d"
+  "/home/home_rebecca/projects/school_clion/main.cpp" "CMakeFiles/school_clion.dir/main.cpp.o" "gcc" "CMakeFiles/school_clion.dir/main.cpp.o.d"
+  "/home/home_rebecca/projects/school_clion/sort/bubblesort.cpp" "CMakeFiles/school_clion.dir/sort/bubblesort.cpp.o" "gcc" "CMakeFiles/school_clion.dir/sort/bubblesort.cpp.o.d"
+  "/home/home_rebecca/projects/school_clion/sort/quicksort.cpp" "CMakeFiles/school_clion.dir/sort/quicksort.cpp.o" "gcc" "CMakeFiles/school_clion.dir/sort/quicksort.cpp.o.d"
+  "/home/home_rebecca/projects/school_clion/student_array/student_array.cpp" "CMakeFiles/school_clion.dir/student_array/student_array.cpp.o" "gcc" "CMakeFiles/school_clion.dir/student_array/student_array.cpp.o.d"
+  "/home/home_rebecca/projects/school_clion/tools/output.cpp" "CMakeFiles/school_clion.dir/tools/output.cpp.o" "gcc" "CMakeFiles/school_clion.dir/tools/output.cpp.o.d"
+  "/home/home_rebecca/projects/school_clion/tools/random_array.cpp" "CMakeFiles/school_clion.dir/tools/random_array.cpp.o" "gcc" "CMakeFiles/school_clion.dir/tools/random_array.cpp.o.d"
+  "/home/home_rebecca/projects/school_clion/wiederholung/wiederholung.cpp" "CMakeFiles/school_clion.dir/wiederholung/wiederholung.cpp.o" "gcc" "CMakeFiles/school_clion.dir/wiederholung/wiederholung.cpp.o.d"
   )
 
 # Targets to which this target links.

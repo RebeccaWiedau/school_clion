@@ -44,11 +44,12 @@
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/usr/bin/../lib64/gcc/x86_64-suse-linux/10/../../../../include/c++/10"/>
-					<Add directory="/usr/bin/../lib64/gcc/x86_64-suse-linux/10/../../../../include/c++/10/x86_64-suse-linux"/>
-					<Add directory="/usr/bin/../lib64/gcc/x86_64-suse-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/llvm-13/lib/clang/13.0.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib64/clang/11.0.1/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
@@ -65,11 +66,12 @@
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/usr/bin/../lib64/gcc/x86_64-suse-linux/10/../../../../include/c++/10"/>
-					<Add directory="/usr/bin/../lib64/gcc/x86_64-suse-linux/10/../../../../include/c++/10/x86_64-suse-linux"/>
-					<Add directory="/usr/bin/../lib64/gcc/x86_64-suse-linux/10/../../../../include/c++/10/backward"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward"/>
+					<Add directory="/usr/lib/llvm-13/lib/clang/13.0.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib64/clang/11.0.1/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
@@ -117,6 +119,12 @@
 			<Option target="school_clion"/>
 		</Unit>
 		<Unit filename="/home/home_rebecca/projects/school_clion/tools/random_array.h">
+			<Option target="school_clion"/>
+		</Unit>
+		<Unit filename="/home/home_rebecca/projects/school_clion/wiederholung/wiederholung.cpp">
+			<Option target="school_clion"/>
+		</Unit>
+		<Unit filename="/home/home_rebecca/projects/school_clion/wiederholung/wiederholung.h">
 			<Option target="school_clion"/>
 		</Unit>
 		<Unit filename="/home/home_rebecca/projects/school_clion/CMakeLists.txt">
